@@ -1,0 +1,10 @@
+node_modules
+package-lock.json
+*.sublime-*
+.DS_Store
+.nyc_output
+yarn-error.log
+yarn-debug.log
+npm-debug.log
+.idea
+.env
