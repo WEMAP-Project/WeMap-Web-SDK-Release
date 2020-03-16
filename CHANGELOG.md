@@ -1,6 +1,21 @@
 # WeMap SDK
 
 -------------
+## Version 1.1
+
+## Date: 2020/03/16
+
+### ✨ Feautures
+1. Reverse:
+    1. update url of polygon reverse
+    2. maximum allowed distance for reverse is saved in config.js
+	3. Fix format address
+2. WeGeolocationControl: A control provides a button that uses the browser's geolocation API to locate the user on the map.
+3. WeGeocode
+	1. Add fly to when howver to search list or press enter in search input
+	2. Added zoom to polygon and show polygon
+
+-------------
 ## Version 1.0
 
 ### Date: 2020/03/05
