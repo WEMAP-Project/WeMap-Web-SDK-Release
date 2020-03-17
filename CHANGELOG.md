@@ -1,6 +1,14 @@
 # WeMap SDK
 
 -------------
+## Version 1.2
+
+## Date: 2020/03/17
+
+### ✨ Feautures
+1. WeGeolocationControl: Fix bugs and improvements performance.
+
+-------------
 ## Version 1.1
 
 ## Date: 2020/03/16
