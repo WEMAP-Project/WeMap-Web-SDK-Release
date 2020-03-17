@@ -1,7 +1,7 @@
 # WeMap SDK
 
 -------------
-## Version 1.2
+## Version 1.1
 
 ## Date: 2020/03/17
 
