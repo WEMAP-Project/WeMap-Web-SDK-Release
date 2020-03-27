@@ -1,6 +1,22 @@
 # WeMap SDK
 
 -------------
+## Version 1.2
+
+## Date: 2020/03/27
+
+### ✨ Feautures
+
+1. Place detail:
+    1. Change format Latitude and Longitude
+
+2. WeFilter:
+    1. Added Wefilter: Filter by categories of PoI on the map
+
+### ⚠ Breaking changes
+- Added WeFilter
+
+-------------
 ## Version 1.1
 
 ## Date: 2020/03/17
