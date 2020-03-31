@@ -1,6 +1,19 @@
 # WeMap SDK
 
 -------------
+
+## Date: 2020/03/31
+
+### ✨ Feautures
+
+1. Interface:
+    1. Supported mobile Browser
+    2. Fix bugs and improvements performance
+
+### ⚠ Breaking changes
+- Supported mobile Browser
+
+-------------
 ## Version 1.2
 
 ## Date: 2020/03/27
