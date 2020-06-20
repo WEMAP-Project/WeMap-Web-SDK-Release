@@ -1,6 +1,21 @@
 # WeMap SDK
 
 -------------
+## Version 1.3
+## Date: 2020/06/20
+
+### ✨ Feautures
+
+1. Directions: 
+    - Support another engine for directions
+    - Update UI directions
+    - Support display order of engine/vehicles
+2. Fix bugs and improvements performance
+
+### ⚠ Breaking changes
+- Support another engine for directions 
+
+-------------
 
 ## Date: 2020/03/31
 
