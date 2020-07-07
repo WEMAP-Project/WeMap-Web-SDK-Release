@@ -1,6 +1,20 @@
 # WeMap SDK
 
 -------------
+## Version 1.4
+## Date: 2020/07/07
+
+### ✨ Feautures
+
+1. Directions: 
+    - Support bus directions
+    - Update UI directions
+2. Fix bugs and improvements performance
+
+### ⚠ Breaking changes
+- Support bus directions
+
+-------------
 ## Version 1.3
 ## Date: 2020/06/20
 
