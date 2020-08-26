@@ -23,7 +23,7 @@
 <body>
 <div id="map"></div>
 <script>
-    let map = new wemapgl.WeMap({
+    var map = new wemapgl.WeMap({
         container: 'map',
         key: 'vpstPRxkBBTLaZkOaCfAHlqXtCR',
         center: [106.95265336660327, 15.722086781041796],
@@ -36,46 +36,47 @@
     let wemapControl = new wemapgl.WeGeocoder({
         flyTo: 'hybrid',
         key: 'vpstPRxkBBTLaZkOaCfAHlqXtCR',
-        engine: 'default',  //ko biết
+        engine: 'default',
         suggestion: {
             min_char: 4
         }
     });
     map.addControl(wemapControl);
 
-    let wemapDirection =  new wemapgl.WeDirections({
+    let weMapDirections =  new wemapgl.WeDirections({
         key: "vpstPRxkBBTLaZkOaCfAHlqXtCR",
-        active: 'engine01/driving',
         supports: [
             'engine01/driving',
-            // 'engine01/driving-traffic',
-            'engine01/driving-traffic',
-            'engine01/walking',
-            'engine01/cycling',
-            'engine02/driving',
             // 'engine02/driving-traffic',
             'engine02/public-transport',
-            'engine02/walking',
-            'engine02/cycling'
+            'engine01/walking',
+            'engine01/cycling',
+            // 'engine01/driving',
+            // 'engine01/driving-traffic',
+            // 'engine01/public-transport',
+            // 'engine01/walking',
+            // 'engine01/cycling',
         ],
-		alternatives: true,
+        // interactive: true, // Enable action Directions, default: false
+        alternatives: true,
         geocoder: {
             engine: 'pelias',
         }
     });
 
-    map.addControl(wemapDirection, 'top-left');
+    map.addControl(weMapDirections, 'top-left');
 
     map.addControl(new wemapgl.NavigationControl(), 'bottom-right');
 
-    map.addControl(new wemapgl.WeGeolocateControl({
+    const geolocate = new wemapgl.WeGeolocateControl({
         positionOptions: {
             enableHighAccuracy: true
         },
         trackUserLocation: true
-    }), 'bottom-right');
+    });
+    map.addControl(geolocate, 'bottom-right');
 
-    
+
     let poiLayers = ["poi-level-1", "poi-level-2", "poi-level-3"];
     let filterControl = new wemapgl.WeFilterControl({
         "filters": {
@@ -106,7 +107,7 @@
                 "color": "#229954",
                 "featureClasses": ["hotel", "guest_house", "motel"],
                 "layers": poiLayers
-            }
+            },
             // "building": {
             //     "text": "Công trình",
             //     "fa-icon": "fa-building",
