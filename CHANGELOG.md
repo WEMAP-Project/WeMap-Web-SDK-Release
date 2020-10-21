@@ -1,6 +1,14 @@
 # WeMap SDK
 
 -------------
+## Version 1.5
+## Date: 2020/10/21
+
+### ✨ Feautures
+
+1. Code format: Update code slug
+
+-------------
 ## Version 1.4
 ## Date: 2020/08/17
 
