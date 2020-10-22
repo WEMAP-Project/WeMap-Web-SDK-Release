@@ -1,6 +1,14 @@
 # WeMap SDK
 
 -------------
+## Version 1.5.1
+## Date: 2020/10/22
+
+### ✨ Feautures
+
+1. Features: Added traffic layer
+
+-------------
 ## Version 1.5
 ## Date: 2020/10/21
 
