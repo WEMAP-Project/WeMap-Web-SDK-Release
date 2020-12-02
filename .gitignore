@@ -8,3 +8,5 @@ yarn-debug.log
 npm-debug.log
 .idea
 .env
+
+.vscode

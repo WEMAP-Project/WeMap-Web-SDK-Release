@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Display driving directions</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+
+    <script src="../assets/js/wemap-gl.js" type="text/javascript"></script>
+
+    <link href="../assets/css/wemap.min.css" rel="stylesheet" />
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+
+    <script>
+        var map = new wemapgl.WeMap({
+            key: 'vpstPRxkBBTLaZkOaCfAHlqXtCR',
+            container: 'map',
+            style: 'bright',
+            center: [105.781187, 21.036902],
+            zoom: 7
+        });
+
+        map.on('load', function () {
+            map.loadImage(
+                'https://upload.wikimedia.org/wikipedia/commons/7/7c/201408_cat.png',
+                function (error, image) {
+                    if (error) throw error;
+                    map.addImage('cat', image, {
+                        content: [16, 16, 400, 400], // place text over left half of image, avoiding the 16px border
+                        stretchX: [[16, 400]], // stretch everything horizontally except the 16px border
+                        stretchY: [[16, 400]], // stretch everything vertically except the 16px border
+                    });
+                    map.addSource('cat-image', {
+                        'type': 'geojson',
+                        'data': {
+                            'type': 'FeatureCollection',
+                            'features': [
+                                {
+                                    'type': 'Feature',
+                                    'geometry': {
+                                        'type': 'Point',
+                                        'coordinates': [105.781187, 21.036902]
+                                    }
+                                }
+                            ]
+                        }
+                    });
+                    map.addLayer({
+                        'id': 'points',
+                        'type': 'symbol',
+                        'source': 'cat-image',
+                        'layout': {
+                            'icon-image': 'cat',
+                            'icon-size': 0.25
+                        }
+                    });
+                }
+            );
+        });
+
+
+    </script>
+</body>
+
+</html>
