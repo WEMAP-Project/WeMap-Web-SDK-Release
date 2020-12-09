@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>WeMap v1.5.1</title>
+    <title>WeMap v1.5.2</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
     <script src="assets/js/wemap-gl.js"  type="text/javascript"></script>
     <link href="assets/css/wemap.min.css" rel="stylesheet" />
@@ -31,7 +31,7 @@
         // zoom: 13,
         urlController: "true",
         reverse: "true",
-        traffic: "true"
+        // traffic: "true"
     });
 
     let wemapControl = new wemapgl.WeGeocoder({
@@ -47,11 +47,11 @@
     let weMapDirections =  new wemapgl.WeDirections({
         key: "vpstPRxkBBTLaZkOaCfAHlqXtCR",
         supports: [
-            'engine01/driving',
+            'engine02/driving',
             // 'engine02/driving-traffic',
             'engine02/public-transport',
-            'engine01/walking',
-            'engine01/cycling',
+            'engine02/walking',
+            'engine02/cycling',
             // 'engine01/driving',
             // 'engine01/driving-traffic',
             // 'engine01/public-transport',
