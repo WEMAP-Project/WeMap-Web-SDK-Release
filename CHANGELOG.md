@@ -1,6 +1,19 @@
 # WeMap SDK
 
 -------------
+## Version 1.5.2
+## Date: 2020/12/09
+
+### ✨ Feautures
+
+1. Reverse:
+	- Support language Vietnamese
+2. Search:
+	- Support language Vietnamese
+3. Directions:
+	- Support language Vietnamese
+
+-------------
 ## Version 1.5.1
 ## Date: 2020/10/22
 
