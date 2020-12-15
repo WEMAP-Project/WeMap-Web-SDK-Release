@@ -1,6 +1,15 @@
 # WeMap SDK
 
 -------------
+## Version 1.5.3
+## Date: 2020/12/15
+
+### ✨ Feautures
+
+1. Directions:
+	- Support multiple stops point
+
+-------------
 ## Version 1.5.2
 ## Date: 2020/12/09
 
