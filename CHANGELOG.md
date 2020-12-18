@@ -1,6 +1,15 @@
 # WeMap SDK
 
 -------------
+## Version 1.5.4
+## Date: 2020/12/18
+
+### ✨ Feautures
+
+1. Search and Geocode: Increase search result via user location
+2. Reverse: Increase reverse result when multiple POI in same position
+
+-------------
 ## Version 1.5.3
 ## Date: 2020/12/15
 
