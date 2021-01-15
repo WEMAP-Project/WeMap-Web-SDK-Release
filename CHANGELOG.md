@@ -1,5 +1,14 @@
 # WeMap SDK
 
+
+-------------
+## Version 1.5.5
+## Date: 2021/01/15
+
+### ✨ Feautures
+
+1. Fix bugs and improvements performance
+
 -------------
 ## Version 1.5.4
 ## Date: 2020/12/18
