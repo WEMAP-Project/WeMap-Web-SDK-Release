@@ -2,6 +2,15 @@
 
 
 -------------
+## Version 1.6.0
+## Date: 2021/01/15
+
+### ✨ Feautures
+
+1. Fix bugs and improvements performance
+2. Add support for satellite image
+
+-------------
 ## Version 1.5.5
 ## Date: 2021/01/15
 
