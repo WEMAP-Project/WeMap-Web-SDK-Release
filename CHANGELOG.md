@@ -2,6 +2,14 @@
 
 
 -------------
+## Version 1.6.1
+## Date: 2021/01/15
+
+### ✨ Feautures
+
+1. Fix bugs and improvements performance
+
+-------------
 ## Version 1.6.0
 ## Date: 2021/01/15
 
